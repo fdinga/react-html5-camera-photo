@@ -18,6 +18,7 @@ export function _getMirrorCameraStyle (imageMirror) {
 
 export function getVideoStyles (isDisplay, imageMirror) {
   return {
+    ...{ backgroundColor: 'transparent' },
     ..._getMirrorCameraStyle(imageMirror),
     ...getShowHideStyle(isDisplay)
   };

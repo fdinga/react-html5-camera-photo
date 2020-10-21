@@ -39,7 +39,7 @@ function App (props) {
       isSilentMode = {false}
       isShowWhiteFlash={false}
       isDisplayStartCameraError = {true}
-      isFullscreen = {false}
+      isFullscreen = {true}
       sizeFactor = {1}
       onCameraStart = { (stream) => { handleCameraStart(stream); } }
       onCameraStop = { () => { handleCameraStop(); } }
