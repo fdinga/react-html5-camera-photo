@@ -37,6 +37,7 @@ function App (props) {
       isMaxResolution = {true}
       isImageMirror = {false}
       isSilentMode = {false}
+      isShowWhiteFlash={false}
       isDisplayStartCameraError = {true}
       isFullscreen = {false}
       sizeFactor = {1}

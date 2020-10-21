@@ -114,9 +114,11 @@ function Camera (props) {
         isDisplayError={props.isDisplayStartCameraError}
         errorMsg={cameraStartDisplayError}
       />
-      <WhiteFlash
-        isShowWhiteFlash={!isShowVideo}
-      />
+      {props.isShowWhiteFlash && (
+        <WhiteFlash
+          isShowWhiteFlash={!isShowVideo}
+        />
+      )}
       <img
         style={showHideImgStyle}
         alt="camera"
@@ -155,6 +157,7 @@ Camera.propTypes = {
   isImageMirror: PropTypes.bool,
   isSilentMode: PropTypes.bool,
   isDisplayStartCameraError: PropTypes.bool,
+  isShowWhiteFlash: PropTypes.bool,
   imageCompression: PropTypes.number,
   isMaxResolution: PropTypes.bool,
   isFullscreen: PropTypes.bool,
